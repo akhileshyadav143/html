@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 2px solid green;
+            height: 400px;
+            width: 100vw;
+            display:flex;
+            height: 100vh;
+            /* justify-content: baseline;
+            justify-content: center;
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+            /* align-items: baseline; */
+            /* align-items: center  ; */
+            /* align-items: end; */
+            align-items: center;
+            justify-content: center;
+
+        }
+        #parent div{
+            height: 100px;
+            width: 100px;
+
+        }
+        #parent  div:nth-of-type(1){
+            background-color: rgb(165, 8, 58);
+        }
+         #parent  div:nth-of-type(2){
+            background-color: rgb(83, 32, 204);
+        }
+         #parent  div:nth-of-type(3){
+            background-color: rgb(200, 59, 13);
+        }
+         #parent  div:nth-of-type(4){
+            background-color: rgb(96, 219, 25);
+        }
+    </style>
+</head>
+<body>
+    <h2>flexbox</h2>
+    <div id="parent">
+      <div></div>
+        <div> </div>
+         <div></div>
+         <div> </div>
+         </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            background-color: black;
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            flex-wrap: wrap;
+        }
+        #home_div{
+            /* background-color: red; */
+            display: flex;
+            width: 300px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div>
+            <a>Home</a>
+        </div>
+        <div id="home_div">
+            <a>About</a>
+            <a>Contact Us</a>
+            <a>pta nhi</a>
+        </div>
+        <div>
+            <button>Login</button>
+        </div>
+
+    </div>
+</body>
+</html>
