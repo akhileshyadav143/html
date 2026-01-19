@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KidLearn Dashboard</title>
+
+<style>
+body{
+    margin:0; 
+    font-family: Arial, sans-serif;
+   
+    background:#f4f6fb;
+}
+
+
+.topbar{
+    background:linear-gradient(to right,#7b2ff7,#f107a3);
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.topbar h2{
+    margin:0;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    font-weight:bold;
+}
+
+
+.welcome{
+    background:linear-gradient(to right,#8e2de2,#ff6a88);
+    color:white;
+    margin:20px;
+    padding:25px;
+    border-radius:12px;
+}
+
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin:20px;
+}
+
+.stat{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.title{
+    margin:20px;
+    font-size:22px;
+}
+
+.assignments{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin:5px 0;
+}
+
+.tag{
+    display:inline-block;
+    padding:3px 8px;
+    border-radius:20px;
+    font-size:12px;
+    color:white;
+}
+
+.math{background:#7b2ff7;}
+.english{background:#ff9800;}
+.science{background:#2196f3;}
+.art{background:#4caf50;}
+.hindi{background:#9c27b0;}
+.game{background:#ff5722;}
+
+.btn{
+    display:block;
+    text-align:center;
+    margin-top:10px;
+    padding:8px;
+    border-radius:20px;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+}
+
+.btn.math{background:#7b2ff7;}
+.btn.english{background:#ff9800;}
+.btn.science{background:#2196f3;}
+.btn.art{background:#4caf50;}
+.btn.hindi{background:#9c27b0;}
+.btn.game{background:#ff5722;}
+
+
+.motivation{
+    background:#ff9800;
+    color:white;
+    text-align:center;
+    margin:20px;
+    padding:20px;
+    border-radius:12px;
+    font-size:18px;
+}
+
+
+.footer{
+    background:#2563eb;
+    color:white;
+    text-align: center;
+    padding:15px;
+}
+
+.topbar{
+    transform: rotate(360deg);
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="topbar">
+    <h2>KidLearn</h2>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Assignments</a>
+        <a href="#">Profile</a>
+    </div>
+</div>
+
+
+<div class="welcome">
+    <h1>Hey Champ! Ready to Learn? 🌟</h1>
+    <p>You have 5 new assignments waiting for you. Let's make today awesome!</p>
+</div>
+
+<div class="stats">
+    <div class="stat"><h2>6</h2><p>Total</p></div>
+    <div class="stat"><h2>1</h2><p>Completed</p></div>
+    <div class="stat"><h2>2</h2><p>In Progress</p></div>
+    <div class="stat"><h2>150 ⭐</h2><p>Points</p></div>
+</div>
+
+
+<div class="title">My Assignments</div>
+
+<div class="assignments">
+
+    <div class="card">
+        <span class="tag math">New</span>
+        <h3>Math Practice</h3>
+        <p>Mathematics</p>
+        <a href="#" class="btn math">Start Now</a>
+    </div>
+
+    <div class="card">
+        <span class="tag english">Working</span>
+        <h3>Story Writing</h3>
+        <p>English</p>
+        <a href="#" class="btn english">Start Now</a>
+    </div>
+
+    <div class="card">
+        <span class="tag science">New</span>
+        <h3>Science Project</h3>
+        <p>Science</p>
+        <a href="#" class="btn science">Start Now</a>
+    </div>
+
+    <div class="card">
+        <span class="tag art">Done</span>
+        <h3>Drawing Activity</h3>
+        <p>Art</p>
+        <a href="#" class="btn art">View Details</a>
+    </div>
+
+    <div class="card">
+        <span class="tag hindi">Working</span>
+        <h3>Hindi Poem</h3>
+        <p>Hindi</p>
+        <a href="#" class="btn hindi">Start Now</a>
+    </div>
+
+    <div class="card">
+        <span class="tag game">New</span>
+        <h3>Number Games</h3>
+        <p>Mathematics</p>
+        <a href="#" class="btn game">Start Now</a>
+    </div>
+
+</div>
+
+
+<div class="motivation">
+    ⭐⭐ ⭐  
+    <br>You're doing amazing!  
+    <br>Complete 2 more assignments to unlock a special badge!
+</div>
+
+
+<div class="footer">
+    Keep Learning, Keep Growing! 🚀
+</div>
+
+</body>
