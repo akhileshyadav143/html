@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+            background-color: aqua;
+
+        }
+        #main{
+            height: 500px;
+            position:  relative ;
+            width: 300px;
+            margin: 40px auto;
+            transform-style: preserve-3d ;
+            transition: 3s;
+             box-shadow: rgba(232, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+        }
+        #main:hover{
+            transform: rotateY(360deg);
+        }
+       #card_a{
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 7;
+        backface-visibility: hidden;
+        
+
+        }
+        img{
+            height: 50%;
+            width: 100%;
+        }
+        #card_b{
+            height: 50%;
+            width: 100%;
+            z-index: 3;
+            transform: rotateY(180deg);
+            position: absolute;
+            background-color: rebeccapurple;
+            font-size: 25px;
+            border-radius: 10%;
+    
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <div id="card_a">
+            <img   src="https://images.unsplash.com/photo-1768488674723-2bf98b0a0515?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NXx8fGVufDB8fHx8fA%3D%3D">
+            
+        </div>
+         <div id="card_b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio vitae ea, ad nisi perferendis atque quis consequatur quos perspiciatis in, accusamus harum temporibus sit? Fugiat amet hic invent</div>
+    </div>
+</body>
+</html> 
+
+
+
+ 
