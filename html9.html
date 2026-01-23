@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: burlywood;
+            height: 200px;
+            width: 300px;
+            animation-name: any;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state:  paused;
+             font-size: large;
+            transition: 3s;
+        }
+        div:hover{
+            animation-play-state: running;
+        }
+        @keyframes any{
+         0%{
+            background-color: red;
+            height: 400px;
+            width: 400px;
+            border-radius: 40px;
+          }
+           25%{ 
+            background-color: rgb(7, 245, 122);
+            height: 100vh;
+            width: 50vw;
+          }
+       50%{
+            background-color: rgb(95, 25, 217);
+            height: 10px;
+            width: 40px;
+
+          }   
+          100%{
+            background-color: rgb(196, 237, 11);
+            height: 100vh;
+            width: 100vw;
+            border-radius: 50%;
+          }  
+        }
+        div:hover{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2> animationssssssss</h2>
+    <div></div>
+</body>
+</html>
