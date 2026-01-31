@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+           float: left;
+           
+        }
+       .card{
+        border: 4px solid rgb(77, 14, 248);
+       }
+       .card:nth-child(3){
+        background-color: rgb(21, 199, 218);
+        clear:both;
+       }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img  height="200px",width="100px" src="https://images.unsplash.com/photo-1767978918948-e8b8317a1a4a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D">
+        <div class="card">
+           <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique debitis nesciunt reprehenderit, repudiandae accusantium placeat eum ab. Corrupti laboriosam sapiente tempore, aut totam quae possimus cumque, amet perferendis libero eveniet error iure saepe incidunt.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae exercitationem voluptatem veniam quaerat, unde praesentium possimus aspernatur accusamus ipsam voluptas nostrum quidem velit obcaecati corporis laudantium vero quia aut, magni enim excepturi. Molestiae ullam iste dolorem tempore inventore quasi laudantium! Dicta repellat nemo voluptatem. Aliquam quas sequi nam, repudiandae ab vero totam corporis harum ipsam adipisci voluptatibus, quos possimus molestias, odit nisi eveniet alias autem non. Debitis aliquam iure aut dolorum enim est perspiciatis quis rem esse quisquam modi, unde quia ipsam doloremque quam. Error tenetur ratione assumenda voluptatem reiciendis, nisi nihil est deserunt maiores nulla eaque atque. Dolorem pariatur saepe fugit quos perferendis, aliquam dolor vero, molestiae quis at ullam nisi debitis ad autem beatae! Voluptatem voluptatibus nemo reprehenderit? Expedita laboriosam laborum facilis quos voluptatibus? Error laborum nemo earum cum magni assumenda, tempora a accusamus enim incidunt facere, inventore sequi non impedit perferendis, doloremque distinctio ipsum! Labore totam veritatis vitae quasi doloremque, beatae, ut, dolor aliquam corrupti magnam illo natus voluptate temporibus quisquam! Alias, expedita! Optio voluptates quia maxime ullam repellat illo esse perferendis expedita aperiam. In corrupti perferendis voluptatem quis vero molestiae assumenda beatae ex, quos exercitationem dolore accusamus officiis tempora, temporibus rem error ad eligendi dicta quo nam eum ipsam magni! Repellat iure deserunt sapiente. Sapiente, ab. Consectetur nihil ducimus sint qui magni, animi unde debitis corrupti aliquam maiores, culpa iste consequuntur ullam ad ipsam inventore odit eos similique, voluptate ea adipisci obcaecati numquam quam. Soluta dicta, possimus magni incidunt alias quod architecto, repellat beatae quisquam illo accusantium nobis deleniti, ratione exercitationem nisi pariatur quidem ipsa perspiciatis placeat repudiandae nam porro? Quaerat, exercitationem vitae, temporibus ratione magnam itaque suscipit a necessitatibus earum, rem architecto perspiciatis maiores rerum eligendi! Nihil quaerat quidem libero harum inventore deserunt, culpa in eum itaque omnis cum numquam dolorem natus id suscipit! Quam repellendus repudiandae laudantium quas mollitia porro, sed sapiente illo eligendi esse ea incidunt asperiores blanditiis iure pariatur, eum tempora voluptatibus!</div>
+        <div class="card"> card 3</div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seleters</title>
+    <style>
+        /* .data:first-child{
+            background-color: aqua;
+        } */
+        /* .data::first-line{
+            color: blueviolet;
+        } */
+         /* .main{
+            color: blue;
+            border: 3px solid  black;
+              font-size: 35px;
+         }
+       p,a,.data,  [data-color="primary"]{
+        padding-top: 45px;
+       } */
+        /* .data:nth-child(odd){
+            background-color: blue;
+        } */
+         /* .data:nth-last-child(1){
+            background-color: red;
+         } */
+
+       .main::before{
+        content: "akhilesh is good";
+        color: aqua;
+       }
+         .main::after{
+        content: "akhilesh is good";
+        color: blueviolet;
+       }
+       .main::selection{
+        color: blue;
+        background-color:black;
+       }
+
+       .data::first-letter{
+        color: rgb(212, 17, 17);
+        font-size: 35px;
+       }
+
+       input::placeholder{
+        color: blue;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div dta-color="primary"  class="data">  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi odio in eius rem!</div>
+           <div class="data">This is a boy</div>
+              <div class="data">This is a boy</div>
+              <input type="text" placeholder="type your name here"
+    </div>
+</body>
+</html>
