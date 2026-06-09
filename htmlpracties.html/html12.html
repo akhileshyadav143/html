@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Fast and reliable Packers and Movers services for home, office, and vehicle shifting."
+  />
+  <title>SwiftMove Packers & Movers</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f8fafc;
+      color:#0f172a;
+    }
+
+    header{
+      background:#0f172a;
+      color:white;
+      padding:15px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:24px;
+      font-weight:bold;
+      color:#f97316;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#f97316;
+    }
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:40px 8%;
+      background:linear-gradient(rgba(15,23,42,0.8),rgba(15,23,42,0.8)),
+      url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop')
+      center/cover;
+      color:white;
+    }
+
+    .hero-content{
+      animation:fadeIn 1.5s ease;
+    }
+
+    .hero h1{
+      font-size:52px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:18px;
+      margin-bottom:30px;
+      line-height:1.6;
+    }
+
+    .btn{
+      background:#f97316;
+      color:white;
+      padding:14px 28px;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+      display:inline-block;
+    }
+
+    .btn:hover{
+      background:#ea580c;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:50px;
+      color:#0f172a;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:14px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+      text-align:center;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h3{
+      margin:20px 0 10px;
+      color:#f97316;
+    }
+
+    .why-us{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .why-box{
+      background:#0f172a;
+      color:white;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+    }
+
+    .contact-container{
+      max-width:600px;
+      margin:auto;
+      background:white;
+      padding:40px;
+      border-radius:14px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    form input,
+    form select{
+      width:100%;
+      padding:14px;
+      margin-bottom:20px;
+      border:1px solid #cbd5e1;
+      border-radius:8px;
+      outline:none;
+    }
+
+    form button{
+      width:100%;
+      padding:14px;
+      background:#f97316;
+      border:none;
+      color:white;
+      font-size:16px;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    form button:hover{
+      background:#ea580c;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+
+      .hero h1{
+        font-size:36px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">SwiftMove</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Reliable Packers & Movers Services</h1>
+
+      <p>
+        Safe, affordable, and fast relocation services for homes,
+        offices, and vehicles across India.
+      </p>
+
+      <a href="#contact" class="btn">Get Free Quote</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>House Shifting</h3>
+        <p>
+          Hassle-free home relocation with safe packing and transport.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Office Relocation</h3>
+        <p>
+          Professional office moving solutions with minimal downtime.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Vehicle Transport</h3>
+        <p>
+          Secure bike and car transportation services nationwide.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section>
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="why-us">
+
+      <div class="why-box">
+        <h3>Affordable Pricing</h3>
+      </div>
+
+      <div class="why-box">
+        <h3>Trusted Professionals</h3>
+      </div>
+
+      <div class="why-box">
+        <h3>On-Time Delivery</h3>
+      </div>
+
+      <div class="why-box">
+        <h3>24/7 Customer Support</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-container">
+
+      <form>
+
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          required
+        />
+
+        <input
+          type="tel"
+          placeholder="Enter Phone Number"
+          required
+        />
+
+        <select required>
+          <option value="">Select Service</option>
+          <option>House Shifting</option>
+          <option>Office Relocation</option>
+          <option>Vehicle Transport</option>
+        </select>
+
+        <button type="submit">
+          Submit
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 SwiftMove Packers & Movers. All Rights Reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
