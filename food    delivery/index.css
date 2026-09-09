@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+/* Main hero background */
+body::before {
+content: "";
+position: fixed;
+inset: 0;
+background:
+linear-gradient(
+rgba(0, 0, 0, 0.35),
+rgba(0, 0, 0, 0.55)
+),
+url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80");
+
+
+background-size: cover;
+background-position: center;
+z-index: -1;
+
+
+}
+
+/* Header */
+header {
+width: 100%;
+height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 8%;
+}
+
+/* Navigation */
+header ul {
+display: flex;
+list-style: none;
+gap: 30px;
+}
+
+header ul li a {
+text-decoration: none;
+color: white;
+font-size: 16px;
+transition: 0.3s;
+}
+
+header ul li a:hover {
+color: #ff4f5a;
+}
+
+/* Main section */
+main {
+min-height: calc(100vh - 130px);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align: center;
+}
+
+/* Logo image */
+main img {
+width: 260px;
+max-width: 80%;
+margin-bottom: 25px;
+}
+
+/* Main heading text */
+main p {
+font-size: 34px;
+font-weight: 400;
+margin-bottom: 30px;
+max-width: 800px;
+}
+
+/* Search box */
+main input {
+width: 650px;
+max-width: 90%;
+height: 60px;
+border: none;
+outline: none;
+border-radius: 10px;
+padding: 0 25px;
+font-size: 16px;
+color: #333;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+main input::placeholder {
+color: #777;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.6);
+font-size: 14px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+
+
+header {
+    padding: 0 5%;
+    height: auto;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header ul li a {
+    font-size: 14px;
+}
+
+main p {
+    font-size: 24px;
+}
+
+main img {
+    width: 200px;
+}
+
+main input {
+    width: 100%;
+    height: 55px;
+}
+
+}
