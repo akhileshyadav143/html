@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.red{
+background-color: rgb(255, 136, 0);
+height: 444px;
+color: azure;
+}
+.green{
+background-color: rgb(231, 32, 161);
+color: black;
+}
